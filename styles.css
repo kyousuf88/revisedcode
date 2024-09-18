@@ -1,0 +1,203 @@
+/* General Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #2a2f38;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff; /* Blue color for a modern look */
+    font-size: 1.75rem;
+    margin-top: 0;
+    border-bottom: 3px solid #007bff; /* Underline for emphasis */
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 40px;
+}
+
+.actions {
+    text-align: center;
+}
+
+/* Output Resume Page */
+.resume-output-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.resume-output-page h2 {
+    font-size: 2.5rem;
+    color: #007bff; /* Blue color for a modern look */
+    margin-top: 0;
+    border-bottom: 3px solid #007bff; /* Underline for emphasis */
+    padding-bottom: 10px;
+}
+
+.resume-output-page h3 {
+    font-size: 1.75rem;
+    color: #ff5722; /* Orange color for headings */
+    margin-top: 20px;
+    border-bottom: 2px solid #ff5722; /* Underline for emphasis */
+    padding-bottom: 8px;
+}
+
+.resume-output-page p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.resume-output-page .profile-picture {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.resume-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume-actions button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resume-actions button:hover {
+    background-color: #218838;
+}
+
+.resume-actions a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.resume-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .resume-output-page {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .resume-output-page h2 {
+        font-size: 2rem;
+    }
+
+    .resume-output-page h3 {
+        font-size: 1.5rem;
+    }
+
+    button, .resume-actions button, .resume-actions a {
+        font-size: 1rem;
+    }
+}

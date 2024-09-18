@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        
+        <!-- Personal Information -->
+        <section class="section">
+            <h2>Personal Information</h2>
+            <label for="profilePicture">Upload Picture:</label>
+            <input type="file" id="profilePicture" accept="image/*">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+            
+            <label for="linkedin">LinkedIn URL:</label>
+            <input type="text" id="linkedin" placeholder="Enter your LinkedIn profile URL">
+        </section>
+
+        <!-- Education -->
+        <section class="section" id="education-section">
+            <h2>Education</h2>
+            <div class="education">
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" placeholder="Enter degree">
+
+                <label for="school">School/University:</label>
+                <input type="text" id="school" placeholder="Enter school name">
+
+                <label for="educationDescription">Description:</label>
+                <textarea id="educationDescription" rows="3" placeholder="Enter description"></textarea>
+            </div>
+            <button onclick="addEducation()">Add Education</button>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience-section">
+            <h2>Experience</h2>
+            <div class="experience">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" placeholder="Enter job title">
+
+                <label for="company">Company:</label>
+                <input type="text" id="company" placeholder="Enter company name">
+
+                <label for="jobDescription">Description:</label>
+                <textarea id="jobDescription" rows="3" placeholder="Enter job description"></textarea>
+            </div>
+            <button onclick="addExperience()">Add Experience</button>
+        </section>
+
+        <!-- References -->
+        <section class="section">
+            <h2>References</h2>
+            <label for="referenceName">Reference Name:</label>
+            <input type="text" id="referenceName" placeholder="Enter reference name">
+            
+            <label for="referenceContact">Contact Info:</label>
+            <input type="text" id="referenceContact" placeholder="Enter contact info">
+        </section>
+
+        <!-- Actions -->
+        <section class="actions">
+            <button onclick="generateResume()">Generate Resume</button>
+        </section>
+    </div>
+
+    <!-- Placeholder for the resume output page -->
+    <div id="output-page" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

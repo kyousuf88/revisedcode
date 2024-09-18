@@ -1,0 +1,130 @@
+/* General Layout for Output Resume */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.resume-output-page {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header with Profile Picture */
+.resume-output-page img.profile-picture {
+    display: block;
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-output-page h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #2b2e4a;
+    font-weight: 700;
+}
+
+/* Sub-headings */
+.resume-output-page h3 {
+    font-size: 1.8rem;
+    color: #007bff; /* Light blue color for a modern feel */
+    margin-top: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+.resume-output-page p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.resume-output-page a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.resume-output-page a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Sections */
+.resume-output-page .section {
+    margin-bottom: 20px;
+}
+
+/* Resume Actions (Print and Email Buttons) */
+.resume-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume-actions button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-actions button:hover {
+    background-color: #218838;
+}
+
+/* Footer with Unique URL */
+.resume-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-output-page {
+        padding: 20px;
+    }
+
+    .resume-output-page h2 {
+        font-size: 1.8rem;
+    }
+
+    .resume-output-page h3 {
+        font-size: 1.5rem;
+    }
+}
